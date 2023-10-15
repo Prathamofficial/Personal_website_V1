@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poltawski Nowy', serif;
+    
+
+}
+
+/*************************************************************************** preloder animation ******************************************************************************/
+body {
+    background-color: #0a192f;
+    /* position: fixed; */
+}
+
+#preloder {
+    background: #000 url(images/dpp1.gif) no-repeat center center;
+    background-size: 40%;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+
+}
+
+#navbar {
+
+    display: flex;
+    color: #000;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+/****************************************************************************** logo and image *************************************************************************** */
+#logo {
+    margin: 10px 10px;
+    width: 45%;
+
+}
+
+#logo img {
+    height: 250px;
+    margin: -80px -150px;
+    display: flex;
+    padding: 20px 0px;
+}
+#navul{
+    width: 50%;
+    margin: 1rem;
+   justify-content: end;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#navbar ul li {
+    display: flex;
+    list-style: none;
+    font-size: 1.3rem;
+    align-items: end;
+}
+
+#navbar ul li a {
+    font-size: 19px;
+    color: #fff;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+
+}
+
+#navbar ul li a:hover {
+    color: #fff;
+    background-color: #ff1900;
+    transition: 0.5s;
+
+}
+/**************************************************************************************** container of left middle and right***************************************************************  */
+
+.main_container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+/******************************************************************* Style for the left container for social media links *****************************************************/
+.social_media_container {
+    background-color: #0a192f;
+    display: flex;
+    flex-direction: row;
+    padding-top: 22.2rem;
+}
+
+.left_container {
+    
+    width: 200px;
+    background-color: #0a192f;
+    height: 100%;
+    padding-left: 2rem;
+
+}
+
+.left_container li a svg {
+    width: 20px;
+    height: 20px;
+    color: #8892b0;
+    margin: 0.7rem;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+
+
+.left_container li a svg:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.2);
+    color: #64ffda;
+}
+
+.left_container li {
+
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+/* *****************************************************************style for the left container for projects  ************************************************************************/
+
+.left_container_projects {
+    
+    width: 50px;
+    background-color: #0a192f;
+    height: 100%;
+    padding-left: 2rem;
+    margin-right: 11rem;
+
+}
+
+.left_container_projects li a svg {
+    width: 20px;
+    height: 20px;
+    color: #8892b0;
+    margin: 0.7rem;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+
+
+.left_container_projects li a svg:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.2);
+    color: #64ffda;
+}
+
+.left_container_projects li {
+
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+/* *****************************************************************style for the right container  ************************************************************************/
+.right_container {
+    padding-left: 1rem;
+    width: 100px;
+    background-color: #0a192f;
+    color: #8892b0;
+}
+
+.right_container h6 {
+    font-style: normal;
+    font-weight: lighter;
+    font-family: serif;
+    background-color: #0a192f;
+    color: #8892b0;
+    writing-mode: vertical-lr;
+    margin: 10px;
+}
+
+.right_container h6:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.1);
+    color: #64ffda;
+}
+
+.right_container li {
+    color: #8892b0;
+    ;
+    list-style: none;
+}
+
+.email_container {
+    color: #8892b0;
+    background-color: #0a192f;
+    padding-top: 23rem;
+
+}
+
+/* *****************************************************************style for the middle container  for projects  ************************************************************************/
+
+.middle_container_projects {
+    height: 100%;
+    width: 90rem;
+    padding-top: 8rem;
+    background-color: #0a192f;
+}
+.middle_container_projects h1{
+    padding-left: 4%;
+    color: #fff;
+    font-family: 'Calibre','Inter','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif;
+
+}
+
+.about_container{
+    height: 100%;
+    width: 100%;
+    background-color: #0a192f;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.about_box1{
+    width: 50%;
+    height: auto;
+   margin: 0 10px;
+   padding: 30px 0px 0px 0px;
+   color: #8892b0;
+}
+
+#resume_btn{
+    height: 2rem;
+    width: 6rem;
+    background-color: #00ffc3;
+    color: black;
+    font-weight: bold;
+    margin: 20px;
+    border: transparent;
+   cursor: pointer;
+    border-radius: 10px;
+}
+#resume_btn:hover{
+    background-color: #00ffc3;
+    color: #050801;
+    box-shadow: 0 0 5px #00ffc3,
+                0 0 25px #00ffc3,
+                0 0 50px #00ffc3,
+                0 0 200px #00ffc3;
+      /* -webkit-box-reflect: below 1px linear-gradient(transparent,#00ffc3) ;         */
+    border: none;
+}
+
+/* #resume_btn:hover{
+    box-shadow: #479381 20px 10px 5px;
+
+} */
+
+.about_box2{
+    width: 21%;
+    height: auto;
+
+}
+.about_box2 img{
+    cursor: pointer;
+    width: 15rem;
+    height: 15rem;
+ 
+ filter: grayscale(0%) contrast(1);
+}
+.about_box2 img:hover{
+    filter: grayscale(80%) contrast(1);
+  
+
+}
+
+
+
+
+
+/* *****************************************************************style for the right container  for projects  ************************************************************************/
+
+.right_container_projects {
+    padding-left: 1rem;
+    width:100px;
+    background-color: #0a192f;
+    color: #8892b0;
+}
+
+.right_container_projects h6 {
+    font-style: normal;
+    font-weight: lighter;
+    font-family: serif;
+    background-color: #0a192f;
+    color: #8892b0;
+    writing-mode: vertical-lr;
+    margin: 10px;
+}
+.email_container {
+    color: #8892b0;
+    background-color: #0a192f;
+    padding-top: 23rem;
+
+}
+
+.right_container_projects li {
+    color: #8892b0;
+    list-style: none;
+}
+.right_container_projects h6:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.1);
+    color: #64ffda;
+}
+
+
+
+

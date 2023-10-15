@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="node_modules/css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN USER</title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <script src="https://kit.fontawesome.com/db09a04aa2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./mystyles/MediaStyle.css">
+    <link rel="stylesheet" href="./mystyles/stylelog.css">
+    <link rel="stylesheet" href="mystyles/preloader.css">
+
+</head>
+
+<body>
+    <div id="preloader">
+        <img src="images/dplogo.gif" alt="loading...">
+    </div>
+
+
+    <div class="container" onclick="showElement()">
+        <div class="form-box">
+            <h1 id="title">SIGN UP </h1>
+            <div class="emoji">
+                <img src="emoji/smile.png" id="smile">
+                <img src="emoji/namefeild imoji.png" id="namefeild" style="display: none;">
+                <img src="emoji/emailfeild.png" id="emailfeild" style="display: none;">
+                <img src="emoji/sunglass.png" id="sunglass" style="display: none;">
+                <img src="emoji/unhide.png" id="unhide" style="display: none;">
+
+            </div>
+            <form>
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Name" onclick="showElement()">
+                    </div>
+
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Email" id="email" onclick="showElement()">
+                    </div>
+
+
+
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="password" id="password" onclick="showElement()">
+                        <i class=" fa fa-eye" id="eye-show"></i>
+                        <i class=" fa fa-eye-slash" id="eye-hide"></i>
+                    </div>
+                    <p>lost password <a href="#">click Here</a></p>
+
+
+                </div>
+                <div class="Btn-field">
+                    <button type="button" id="signupBtn">SIGN UP</button>
+                    <button type="button" id="signinBtn" class="disable">SIGN IN</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script>
+        let signupBtn = document.getElementById("signupBtn");
+        let signinBtn = document.getElementById("signinBtn");
+        let nameField = document.getElementById("nameField");
+        let title = document.getElementById("title");
+
+        signinBtn.onclick = function () {
+            nameField.style.maxHeight = "0";
+            title.innerHTML = "SIGN IN";
+            signupBtn.classList.add("disable");
+            signinBtn.classList.remove("disable");
+
+        }
+
+        signupBtn.onclick = function () {
+            nameField.style.maxHeight = "60px";
+            title.innerHTML = "SIGN UP";
+            signupBtn.classList.remove("disable");
+            signinBtn.classList.add("disable");
+
+        }
+    </script>
+
+
+
+
+
+<script src="myscripts/script.js"></script>
+</body>
+
+</html>
