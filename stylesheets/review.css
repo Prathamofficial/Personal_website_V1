@@ -1,0 +1,194 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Poltawski Nowy', serif;
+
+}
+:root {
+  --bodycolour: #0a192f;
+  --text_colour: #8892b0;
+}
+body{
+  background-color: var(--bodycolour);
+}
+:root{
+ 
+  --body_background_color: #0a192f;
+  --text_colour: #8892b0;
+  --navbar_list_color:white;
+  --notification_btn_color:white;
+  ---hi_color:#64ffda;
+  
+
+}
+
+.dark_theam{
+  --body_background_color: rgb(255, 255, 255);
+  --text_colour: black;
+  --navbar_list_color:black;
+  --notification_btn_color:black;
+  ---hi_color:#3498db;
+
+  
+}
+.mobile-icons{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#sunfall{
+  display: block;
+}
+
+
+.center{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 15rem;
+  background-color: var(--body_background_color);
+}
+.container_review{
+  position: relative;
+  width: 400px;
+  background: #111;
+  padding: 20px 30px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container_review .post{
+  display: none;
+}
+.container_review .text{
+  font-size: 25px;
+  color: #666;
+  font-weight: 500;
+}
+.container_review .edit{
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 16px;
+  color: #666;
+  font-weight: bold;
+  cursor: pointer;
+}
+.container_review .edit:hover{
+  /* text-decoration: underline; */
+  color: aqua;
+  
+}
+.container_review .star-widget input{
+  display: none;
+}
+.star-widget label{
+  font-size: 40px;
+  color:#c2c2c2;
+  padding: 10px;
+  float: right;
+  transition: all 0.2s ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+  color: #fd4;
+}
+input:checked ~ label{
+  color: #fd4;
+}
+input#rate-5:checked ~ label{
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+}
+#rate-1:checked ~ form header:before{
+  content: "Not Satisfied! ";
+  
+  
+}
+#rate-2:checked ~ form header:before{
+  content: "Need Improvement! ";
+}
+#rate-3:checked ~ form header:before{
+  content: "It's Ok! ";
+}
+#rate-4:checked ~ form header:before{
+  content: "Satisfied!";
+}
+#rate-5:checked ~ form header:before{
+  content: "Fully Satisfied!";
+}
+.container form{
+  display: block;
+}
+input:checked ~ form{
+  display: block;
+}
+form header{
+  width: 100%;
+  font-size: 25px;
+  color: #fe7;
+  font-weight: 500;
+  margin: 5px 0 20px 0;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+form .textarea{
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+form .textarea textarea{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #eee;
+  border: 1px solid #333;
+  background: #222;
+  padding: 10px;
+  font-size: 17px;
+  resize: none;
+}
+.textarea textarea:focus{
+  border-color: #444;
+}
+form .btn{
+  height: 45px;
+  width: 100%;
+  margin: 15px 0;
+}
+form .btn button{
+  height: 100%;
+  width: 100%;
+  border: 1px solid #444;
+  outline: none;
+  background: green;
+  color: white;
+  font-size: 17px;
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form .btn button:hover{
+  background: #1b1b1b;
+}
+
+.review {
+  width: 100%;
+  margin-left: 10%;
+}
+.review h1{
+  color: var(--text_colour);
+  margin: 2rem;
+  
+}

@@ -1,0 +1,256 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    
+}
+#check{
+    display: none;
+}
+@media screen and (max-width: 376px) {
+    .left,
+    .right{
+        display: none;
+    }
+    
+}
+
+
+@media screen and (max-width: 35em) {
+    
+    .left,
+    .right {
+        display: none;
+
+    }
+
+    #menu_btn {
+        display: block;
+    }
+
+    .logo img {
+        height: 2.5rem;
+        width: 2.5rem;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+
+    #notification_btn {
+        margin: 1rem;
+    }
+
+
+
+    #header_start {
+        font-size: 15px;
+    }
+
+    .header h2 {
+        font-size: 55px;
+    }
+
+    #header_end {
+        font-size: 15px;
+    }
+
+    .left,
+    .right {
+        /* display: none; */
+        width: 50px;
+    }
+
+    #copyright {
+        font-size: 10px;
+    }
+    .center .container_review {
+        position: relative;
+        width: 190px;
+        background: #111;
+        padding: 20px 5px;
+        border: 1px solid #444;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container_review .star-widget label {
+        font-size: 15px;
+        color: #444;
+        padding: 10px;
+        float: right;
+        transition: all 0.2s ease;
+    }
+    .fa, .fas {
+        font-weight: 500;
+    }
+    .container_review .textarea textarea {
+        height: 100%;
+        margin: 0.5rem;
+        width: 170px;
+        outline: none;
+        color: #eee;
+        border-radius: 5px;
+        border: 1px solid #333;
+        background: #222;
+        padding: 10px;
+        font-size: 10px;
+        resize: none;
+    }
+    .container_review .btn button {
+        height: 100%;
+        width: 170px;
+        margin: 0.5rem;
+        border: 1px solid #444;
+        outline: none;
+        background: #222;
+        color: #999;
+        border-radius: 15px;
+        font-size: 17px;
+        font-weight: 500;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .container_review header {
+        width: 100%;
+        font-size: 20px;
+        color: #fe7;
+        font-weight: 500;
+        margin: 5px 0 20px 0;
+        text-align: center;
+        transition: all 0.2s ease;
+    }
+
+
+}
+
+
+
+
+
+@media screen and (max-width:62em) {
+    .navigation_items ul li{
+        margin: 3rem 1rem 1rem 1rem;
+    }
+    .navigation_items ul li a {
+      
+        color: black;
+        
+    }
+    #cancel_btn{
+        margin-top: 5rem;
+    }
+
+    .navigation_items ul  {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+       
+        background-color: #e7f5ff;
+        align-items: center;
+        position: fixed;
+        top: 0px;
+        left: -100%; 
+        transition: all 0.3s ease; 
+        z-index: 1;
+       
+    }
+    #cancel_btn{
+        display: block;
+        /* width: 100%; */
+    }
+    /* .navbar_lists #cancel_btn{
+    margin: 4rem 0rem 0rem 30rem;
+    } */
+    #check{
+        display: none;
+    }
+    
+    
+    
+
+    #menu_btn {
+        display: block;
+    }
+
+    
+
+    .left,
+    .right {
+        position: fixed;
+        height: 100%;
+        width: 70px; 
+    }
+    
+    #header_end{
+        font-size: 10px;
+    }
+    #copyright{
+        display: none;
+    }
+    .center .container_review {
+        position: relative;
+        width: 280px;
+        background: #111;
+        padding: 20px 5px;
+        border: 1px solid #444;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container_review .star-widget label {
+        font-size: 25px;
+        color: #c2c2c2;
+        padding: 10px;
+        float: right;
+        transition: all 0.2s ease;
+    }
+    .fa, .fas {
+        font-weight: 500;
+    }
+    .container_review .textarea textarea {
+        height: 100%;
+        margin: 0.5rem;
+        width: 240px;
+        outline: none;
+        color: #eee;
+        border-radius: 5px;
+        border: 1px solid #333;
+        background: #222;
+        padding: 10px;
+        font-size: 15px;
+        resize: none;
+    }
+    .container_review .btn button {
+        height: 100%;
+        width: 240px;
+        margin: 0.5rem;
+        border: 1px solid #444;
+        outline: none;
+        background: green;
+        color: white;
+        border-radius: 15px;
+        font-size: 17px;
+        font-weight: 900;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .container_review header {
+        width: 100%;
+        font-size: 20px;
+        color: #fe7;
+        font-weight: 500;
+        margin: 5px 0 20px 0;
+        text-align: center;
+        transition: all 0.2s ease;
+    }
+
+}
+
+
+
+

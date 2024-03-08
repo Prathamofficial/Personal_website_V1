@@ -1,0 +1,188 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+#check{
+    display: none;
+}
+
+
+@media screen and (max-width: 35em) {
+    
+
+    .left,
+    .right {
+        display: none;
+        /* background-color: transparent; */
+        position: fixed;
+        height: 100%;
+        width: 10px;
+
+    }
+
+    .project_icons svg{
+        width: 0.9rem;
+    }
+    .project_box{
+        margin: 10px;
+        width: 200px;
+        height: 200px;
+        /* background-color:#112240; */
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .project_box h4{
+        font-size: 10px;
+        /* color:#ccd6f6; */
+        margin: 0.9rem;
+        font-family: 'Calibre','Inter','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif;
+    }
+    .project_box p{
+        font-size: 10px;
+        /* color: #a8b2d1; */
+        margin: 0.9rem;
+    
+    }
+
+    #menu_btn {
+        display: block;
+    }
+
+    .logo img {
+        height: 2.5rem;
+        width: 2.5rem;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+
+    #notification_btn {
+        margin: 1rem;
+    }
+
+    .center {
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 30px 0px;
+    }
+
+    #header_start {
+        font-size: 15px;
+    }
+
+    
+
+    #header_end {
+        font-size: 15px;
+    }
+
+    .left,
+    .right {
+        /* display: none; */
+        width: 50px;
+    }
+
+    #copyright {
+        font-size: 10px;
+    }
+    .header h2{
+        color: var(--text_colour);
+        font-size: 28px;
+        margin:20px 0px;
+    }
+
+
+}
+
+
+
+
+
+@media screen and (max-width:62em) {
+    .navigation_items ul li{
+        margin: 3rem 1rem 1rem 1rem;
+    }
+    .navigation_items ul li a {
+      
+        color: black;
+        
+    }
+    #cancel_btn{
+        margin-top: 5rem;
+    }
+    #check{
+        display: none;
+    }
+
+    .navigation_items ul  {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+       
+        background-color: #e7f5ff;
+        align-items: center;
+        position: fixed;
+        top: 0px;
+        left: -100%; 
+        transition: all 0.3s ease; 
+        z-index: 1;
+       
+    }
+    #cancel_btn{
+        display: block;
+        /* width: 100%; */
+    }
+
+    #menu_btn {
+        display: block;
+    }
+
+    
+
+    .left,
+    .right {
+        position: fixed;
+        height: 100%;
+        width: 70px; 
+    }
+    .center {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 30px 0px;
+    padding: 20px 0px;
+    /* background-color: #0a192f; */
+    }
+    #header_end{
+        font-size: 10px;
+    }
+
+    .project_container{
+        width: 96%;
+        height: 100%;
+        /* background-color:var(--bodycolour); */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        /* gap: 20px; */
+    }
+    .header h2{
+        font-size: 28px;
+        /* margin-left: 3.2rem; */
+        text-align: center;
+        color: var(--text_colour);
+        margin: 20px 0px;
+    }
+    #copyright{
+        display: none;
+    }
+
+}
+
+
+
+
+/* <img src="https://i.scdn.co/image/ab67616d00001e02db2c0be373b51cdc760b1a2b" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb" style="max-width: 300px; height: 546px; margin: 314px 0px; width: 546px;" alt="Devil Eyes - song and lyrics by Showtym, Dave's Not Here, Fokus ..." jsname="kn3ccd"> */
+
+
+
